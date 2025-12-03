@@ -1,0 +1,21 @@
+#!/bin/bash
+
+ 
+
+echo "Nombre : $0"
+
+echo "Argumentos: $#"
+
+echo "Primer y segundo argumento: $1 $2"
+
+if [ $# -gt 2 ]; then
+
+  echo "Argumentos adicionales:"
+
+    for arg in "${@:3}"; do
+
+       echo "$arg"
+
+    done
+
+fi
